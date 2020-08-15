@@ -44,7 +44,7 @@
 
 ![docker_build](screenshots/2.png)
 
-​		flag -t adalah nama atau tag dari image yang akan dibuat
+​       flag -t adalah nama atau tag dari image yang akan dibuat
 
 4. Setelah itu, jalankan docker container dari image yang telah dibuat dengan perintah
 
@@ -162,6 +162,6 @@
 
    ![sukses1](screenshots/9.png)
 
-![sukses2](screenshots/10.png)
+   ![sukses2](screenshots/10.png)
 
-Aplikasi dapat diakses pada http://18.141.217.10:30007/ jika Instance AWS saya masih berjalan.
+Aplikasi dapat diakses pada http://18.141.217.10:30007/ selama Instance AWS saya masih berjalan..
