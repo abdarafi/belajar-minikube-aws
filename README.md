@@ -48,7 +48,7 @@
 4. Setelah itu, jalankan docker container dari image yang telah dibuat dengan perintah
 
    ```bash
-   docker run -dp 80:3000 
+   docker run -dp 80:3000 pingpongapp
    ```
 
    flag -dp adalah membuat container running background dan memetakan port local container (3000) menjadi port 80 pada Host.
