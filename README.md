@@ -12,7 +12,7 @@
    docker version
    ```
 
-   ![docker_ver](1.png)
+   ![docker_ver](screenshots/1.png)
 
    Jika belum, dapat diinstall dengan nama package `docker.io`
 
@@ -42,7 +42,7 @@
    docker build -t pingpongapp .
    ```
 
-![docker_build](2.png)
+![docker_build](screenshots/2.png)
 
 ​		flag -t adalah nama atau tag dari image yang akan dibuat
 
@@ -56,7 +56,7 @@
 
 5. Container sukses dijalankan dengan image yang dibuat.
 
-   ![docker_sukses](o.png)
+   ![docker_sukses](screenshots/o.png)
 
 ### Deployment with Minikube
 
@@ -74,7 +74,7 @@
 
    Pastikan minikube sudah terinstall dengan baik.
 
-   ![minikube_ver](4.png)
+   ![minikube_ver](screenshots/4.png)
 
 2. Karena minikube ini berjalan dengan kubernetes, maka perlu menginstall kubectl. Installasi kubernetes dapat dilihat pada dokumentasi berikut
 
@@ -82,7 +82,7 @@
 
    Pastikan kubectl sudah terinstall.
 
-   ![kube_ver](5.png)
+   ![kube_ver](screenshots/5.png)
 
 3. Selanjutnya adalah menjalankan minikube dengan perintah
 
@@ -92,7 +92,7 @@
 
    tag driver=none diperlukan karena kita menjalankan pada VM.
 
-   ![start_mikube](6.png)
+   ![start_mikube](screenshots/6.png)
 
 4. Karena kita akan deploy aplikasi dari image docker yang dibuat sebelumnya di minikube, maka perlu membuat script yaml untuk deployment dalam bentuk pod. Buat file bernama **deployment-pingpong.yml** yang isinya adalah sebagai berikut
 
@@ -127,7 +127,7 @@
 
    tag --record berguna untuk introspeksi konfigurasi kedepan.
 
-   ![deployment](7.png)
+   ![deployment](screenshots/7.png)
 
 5. Setelah itu buat file script **service-pingpong.yml** yang diperlukan untuk mengatur pod-pod yang telah kita deploy sebelumya. Isi dari file tersebut adalah
 
@@ -156,12 +156,12 @@
    kubectl apply -f service-pingpong.yml --record
    ```
 
-   ![service_kube](8.png)
+   ![service_kube](screenshots/8.png)
 
 6. Aplikasi telah sukses di-deploy menggunakan minikube+k8s. 
 
-   ![sukses1](9.png)
+   ![sukses1](screenshots/9.png)
 
-![sukses2](10.png)
+![sukses2](screenshots/10.png)
 
 Aplikasi dapat diakses pada http://18.141.217.10:30007/ jika Instance AWS saya masih berjalan.
