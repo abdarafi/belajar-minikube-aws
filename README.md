@@ -41,10 +41,9 @@
    ```bash
    docker build -t pingpongapp .
    ```
-
-![docker_build](screenshots/2.png)
-
-​       flag -t adalah nama atau tag dari image yang akan dibuat
+   ![docker_build](screenshots/2.png)
+   
+   flag -t adalah nama atau tag dari image yang akan dibuat
 
 4. Setelah itu, jalankan docker container dari image yang telah dibuat dengan perintah
 
