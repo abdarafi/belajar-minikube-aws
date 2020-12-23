@@ -1,4 +1,4 @@
-# Submission Ping Pong App
+# Belajar Deploy Aplikasi Node JS Menggunakan Minikube Pada Cloud Provider AWS
 
 ## My Setup
 * Laptop MSI GP62 with WSL2
